@@ -73,7 +73,7 @@ function App() {
             value={margin}
             onChange={(e) => setMargin(e.target.value)}
           />
-          <button type="submit" className="btn w-full btn-error max-w-96">Generate QR Code</button>
+          <button type="submit" className="btn w-full btn-error max-w-96 mb-8">Generate QR Code</button>
         </form>
       </div>
       <div className="divider divider-error"></div>
