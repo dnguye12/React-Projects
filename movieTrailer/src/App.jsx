@@ -13,7 +13,13 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    movieTrailer(video).then(res => {
+    movieTrailer(video, (error, res) => {
+      if(error) {
+        console.log(error)
+        setUrl('')
+        setVideo('')
+        return
+      }
       setUrl(res)
       setVideo('')
     })
