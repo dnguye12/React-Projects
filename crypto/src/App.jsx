@@ -2,13 +2,13 @@ import { useEffect, useState } from "react"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 
+library.add(fas)
+
 import CoinGeckoServices from "./services/CoinGecko"
 
 import Hero from "./components/Hero"
 import Filter from "./components/Filter"
 import Table from "./components/Table"
-
-library.add(fas)
 
 function App() {
   const [coins, setCoins] = useState(null)
